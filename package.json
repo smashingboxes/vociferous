@@ -1,0 +1,19 @@
+{
+  "name": "vociferous",
+  "version": "0.0.1",
+  "description": "A pub sub isomorphic presentation framework",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/smashingboxes/vociferous.git"
+  },
+  "author": "Mike and Biko",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/smashingboxes/vociferous/issues"
+  },
+  "homepage": "https://github.com/smashingboxes/vociferous#readme"
+}
