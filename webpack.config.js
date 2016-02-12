@@ -18,7 +18,7 @@ module.exports = {
   },
   output: {
     filename: '[name]',
-    path: './dist'
+    path: './public'
   },
   module: {
     loaders: [
