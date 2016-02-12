@@ -1,3 +1,18 @@
 #!/usr/bin/env node
 
-require('../src/server').start();
+var path = require('path');
+var index = path.resolve(__dirname, '../src/server/index.js');
+
+require('dotenv')
+  .load({path: path.resolve(__dirname, '../.env')});
+
+
+if (process.env.NODE_ENV === 'development') {
+  var nodemon = require('nodemon');
+  nodemon({
+    script: index,
+    ext: 'js json'
+  });
+} else {
+  require(index);
+}

@@ -14,10 +14,13 @@ server.set( 'messageConnector', new RedisMessageConnector({
   host: 'localhost'
 }));
 
-var start = function(){
-  server.start();
-};
+server.start();
 
-module.exports = {
-  start: start
-};
+//
+// var start = function(){
+//
+// };
+//
+// module.exports = {
+//   start: start
+// };
