@@ -1,0 +1,57 @@
+/*
+  COLORS:
+  charcoal: #282828;
+  pink: #eb1767;
+  gray: #bcbec0;
+  dark-gray: #4d4d4f;
+*/
+
+* {
+  box-sizing: border-box;
+}
+
+*::before, *::after {
+  box-sizing: inherit;
+}
+
+*:focus {
+  outline: none;
+}
+
+html, body {
+  position: relative;
+  display: block;
+  min-height: 100%;
+  background: #282828;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+}
+
+h1 {
+  text-transform: uppercase;
+  letter-spacing: 4px;
+}
+
+h2 {
+  color: #eb1767;
+  letter-spacing: 2px;
+}
+
+.message {
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  margin-top: 50vh;
+}
+
+@media screen and ( min-height: 300px ){
+  .message {
+    margin-top: 60vh;
+  }
+}
+
+@media screen and ( min-height: 400px ){
+  .message {
+    margin-top: 70vh;
+  }
+}
