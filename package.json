@@ -37,6 +37,7 @@
   "dependencies": {
     "deepstream.io": "^0.7.1",
     "deepstream.io-cache-redis": "^0.2.5",
+    "deepstream.io-client-js": "^0.4.0",
     "deepstream.io-msg-redis": "^0.2.7",
     "dotenv": "^2.0.0",
     "react": "^0.14.7",
