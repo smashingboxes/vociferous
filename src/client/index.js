@@ -1,23 +1,23 @@
 // Imports
 import React, { Component } from 'react';
 import { render } from 'react-dom';
-import { Router, Route, IndexRedirect, hashHistory } from 'react-router';
+import { Router, Route, IndexRedirect, hashHistory as history } from 'react-router';
 
 // CSS
 import './index.css';
 
 // Components
-import Slide from './components/Slide';
-import Slides from './components/Slides';
+import Login from './components/Login';
+import Presentations from './components/Presentations';
+import Presentation from './components/Presentation';
 import NotFound from './components/NotFound';
 
 // Routes
 const routes = (
-  <Router history={hashHistory}>
-    <Route path="/" component={Slides}>
-      <IndexRedirect to="slide/0" />
-      <Route path="slide/:slideId" component={Slide} />
-    </Route>
+  <Router history={history}>
+    <Route path="/" component={Login} />
+    <Route path="/:uid" component={Presentations} />
+    <Route path="/:uid/:pid" component={Presentation} />
     <Route path="*" component={NotFound} />
   </Router>
 );
