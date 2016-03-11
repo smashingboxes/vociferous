@@ -1,24 +1,31 @@
 // Imports
-import React from 'react';
+import React, { PropTypes } from 'react';
 
 /*
   Slide
   <Slide/>
 */
 
-const Slide = () => {
+const Slide = ({ title, subtitle, image }) => {
+  const slideStyle = {
+    backgroundImage: `url(${image})`,
+    backgroundSize: 'cover'
+  };
+
   return (
-    <div className="message">
-      <h1>Title</h1>
-      <h2>Subtitle</h2>
+    <div className="slide" style={slideStyle}>
+      <div className="message">
+        {title && <h1>{title}</h1>}
+        {subtitle && <h2>{subtitle}</h2>}
+      </div>
     </div>
   )
 }
 
-Slide.propTypes = {};
+Slide.propTypes = {
+  title: PropTypes.string.isRequired,
+  subtitle: PropTypes.string,
+  image: PropTypes.string
+};
 
 export default Slide;
-
-// title: React.PropTypes.string.isRequired,
-// subtitle: React.PropTypes.string,
-// image: React.PropTypes.string

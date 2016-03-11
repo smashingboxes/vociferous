@@ -22,18 +22,12 @@ class Presentations extends Component {
     history.push(`${this.props.location.pathname}/${this.state.pid}`);
   }
 
-  editPresentation(e) {
-    e.preventDefault();
-    history.push(`${this.props.location.pathname}/${this.state.pid}/edit`);
-  }
-
   render() {
     return (
       <div className="slide">
         <div className="message">
-          <h1>Not Found!</h1>
+          <h1>Presentation</h1>
           <button onClick={this.viewPresentation.bind(this)}>View Presentation</button>
-          <button onClick={this.editPresentation.bind(this)}>Edit Presentation</button>
         </div>
       </div>
     );

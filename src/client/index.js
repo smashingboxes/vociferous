@@ -10,7 +10,7 @@ import './index.css';
 import Login from './components/Login';
 import Presentations from './components/Presentations';
 import Presentation from './components/Presentation';
-import EditPresentation from './components/EditPresentation';
+// import EditPresentation from './components/EditPresentation';
 import NotFound from './components/NotFound';
 
 // Routes
@@ -19,7 +19,6 @@ const routes = (
     <Route path="/" component={Login} />
     <Route path="/:uid" component={Presentations} />
     <Route path="/:uid/:pid" component={Presentation} />
-    <Route path="/:uid/:pid/edit" component={EditPresentation} />
     <Route path="*" component={NotFound} />
   </Router>
 );
