@@ -37,36 +37,19 @@ class Presentation extends Component {
     }
   }
 
-  isPresenting() {
-    return true;
-  }
-
   render() {
-    const present = (
-      <PresentSlide
-        title={this.state.slides[this.state.active].title}
-        subtitle={this.state.slides[this.state.active].subtitle}
-        image={this.state.slides[this.state.active].image}
-        notes={this.state.slides[this.state.active].notes}
-        />
-    );
-    const view = (
-      <ViewSlide
-        title={this.state.slides[this.state.active].title}
-        subtitle={this.state.slides[this.state.active].subtitle}
-        image={this.state.slides[this.state.active].image}
-        />
-    );
-
     return (
       <div className="presentation">
-        {this.isPresenting() && present}
-        {!this.isPresenting() && view}
+        {cloneElement(this.props.children, {
+          ...this.props,
+          title: this.state.slides[this.state.active].title,
+          subtitle: this.state.slides[this.state.active].subtitle,
+          image: this.state.slides[this.state.active].image,
+          notes: this.state.slides[this.state.active].notes
+        })}
       </div>
     );
   }
 }
 
 export default Presentation;
-
-// cloneElement(this.props.children, { myProp: 'val', mySecondProp: 'val2' , ...this.props })

@@ -23,7 +23,7 @@ const ViewSlide = ({ title, subtitle, image }) => {
 }
 
 ViewSlide.propTypes = {
-  title: PropTypes.string.isRequired,
+  title: PropTypes.string,
   subtitle: PropTypes.string,
   image: PropTypes.string
 };

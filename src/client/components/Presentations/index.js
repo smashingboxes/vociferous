@@ -13,7 +13,7 @@ class Presentations extends Component {
     super();
 
     this.state = {
-      pid: 'wordisbon'
+      pid: 'scotch-cigars-victory'
     };
   }
 
@@ -22,12 +22,18 @@ class Presentations extends Component {
     history.push(`${this.props.location.pathname}/${this.state.pid}`);
   }
 
+  presentPresentation(e) {
+    e.preventDefault();
+    history.push(`${this.props.location.pathname}/${this.state.pid}/present`);
+  }
+
   render() {
     return (
       <div className="slide">
         <div className="message">
           <h1>Presentation</h1>
           <button onClick={this.viewPresentation.bind(this)}>View Presentation</button>
+          <button onClick={this.presentPresentation.bind(this)}>Present Presentation</button>
         </div>
       </div>
     );

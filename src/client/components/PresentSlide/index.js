@@ -26,7 +26,7 @@ const PresentSlide = ({ title, subtitle, image, notes }) => {
 }
 
 PresentSlide.propTypes = {
-  title: PropTypes.string.isRequired,
+  title: PropTypes.string,
   subtitle: PropTypes.string,
   image: PropTypes.string,
   notes: PropTypes.array

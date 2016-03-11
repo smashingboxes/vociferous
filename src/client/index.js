@@ -10,6 +10,8 @@ import './index.css';
 import Login from './components/Login';
 import Presentations from './components/Presentations';
 import Presentation from './components/Presentation';
+import ViewSlide from './components/ViewSlide';
+import PresentSlide from './components/PresentSlide';
 // import EditPresentation from './components/EditPresentation';
 import NotFound from './components/NotFound';
 
@@ -18,7 +20,10 @@ const routes = (
   <Router history={history}>
     <Route path="/" component={Login} />
     <Route path="/:uid" component={Presentations} />
-    <Route path="/:uid/:pid" component={Presentation} />
+    <Route path="/:uid/:pid" component={Presentation}>
+      <IndexRoute component={ViewSlide} />
+      <Route path="present" component={PresentSlide} />
+    </Route>
     <Route path="*" component={NotFound} />
   </Router>
 );

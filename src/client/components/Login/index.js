@@ -12,7 +12,7 @@ class Login extends Component {
     super();
 
     this.state = {
-      uid: 'mweslander'
+      uid: 'churchill'
     };
   }
 
