@@ -10,7 +10,7 @@ const ViewSlide = ({ slide }) => {
   const slideStyle = {
     backgroundImage: `url(${slide.image})`,
     backgroundSize: 'cover',
-    backgroundPosition: 'center' 
+    backgroundPosition: 'center'
   };
 
   return (
@@ -20,7 +20,7 @@ const ViewSlide = ({ slide }) => {
         {slide.subtitle && <h2>{slide.subtitle}</h2>}
       </div>
     </div>
-  )
+  );
 }
 
 ViewSlide.propTypes = {
