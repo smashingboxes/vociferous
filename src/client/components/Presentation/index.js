@@ -51,7 +51,6 @@ class Presentation extends Component {
       slides: [
         {
           id: 1,
-          order: 2,
           title: 'Scotch',
           subtitle: 'Scotchy scotch scotch, I love scotch',
           image: 'http://www.gentlemansgazette.com/wp-content/uploads/2014/02/Drinking-Scotch-for-the-first-time....jpg',
@@ -59,11 +58,20 @@ class Presentation extends Component {
         },
         {
           id: 2,
-          order: 1,
           title: 'Second Slide',
           subtitle: 'Different Order',
           image: 'http://esq.h-cdn.co/assets/15/26/980x490/landscape-1435238543-schwarzenegger-cigar.jpg',
           notes: ['whatever', 'lol']
+        },
+        {
+          'id': 3,
+          'title': 'Victory',
+          'subtitle': 'Without victory, there is no survival',
+          'image': 'http://www.debutesq.com/Lounge2014/Winston%20Churchill/Winston-Churchill.jpg',
+          'notes': [
+            'More filler',
+            'And a little more filler crap'
+          ]
         }
       ]
     }

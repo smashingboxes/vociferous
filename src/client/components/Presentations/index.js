@@ -33,12 +33,12 @@ class Presentations extends Component {
         <nav>
           <Link to="/">Logout</Link>
         </nav>
-        <h1>Presentations</h1>
+        <h1>{this.props.params.uid}'s Presentations</h1>
         <ul>
           <li>
             <span>{this.state.pid}</span>
-            <button onClick={this.viewPresentation.bind(this)}>View Presentation</button>
-            <button onClick={this.presentPresentation.bind(this)}>Present Presentation</button>
+            <button onClick={this.viewPresentation.bind(this)}>View</button>
+            <button onClick={this.presentPresentation.bind(this)}>Present</button>
           </li>
         </ul>
       </div>
