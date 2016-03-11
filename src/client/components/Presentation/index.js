@@ -1,5 +1,6 @@
 // Imports
-import React, { Component, cloneElement } from 'react';
+import React, { Component, PropTypes, cloneElement } from 'react';
+import { Link } from 'react-router';
 
 // Components
 import ViewSlide from '../ViewSlide';
@@ -11,8 +12,8 @@ import PresentSlide from '../PresentSlide';
 */
 
 class Presentation extends Component {
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
 
     this.state = {
       active: 0,
@@ -64,5 +65,10 @@ class Presentation extends Component {
     );
   }
 }
+
+Presentation.propTypes = {
+  params: PropTypes.object,
+  children: PropTypes.node
+};
 
 export default Presentation;

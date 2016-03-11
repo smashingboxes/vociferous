@@ -1,6 +1,6 @@
 // Imports
 import React, { Component, PropTypes } from 'react';
-import { hashHistory as history } from 'react-router';
+import { Link, hashHistory as history } from 'react-router';
 // import deepstream from 'deepstream.io-client-js';
 
 /*
@@ -29,12 +29,18 @@ class Presentations extends Component {
 
   render() {
     return (
-      <div className="slide">
-        <div className="message">
-          <h1>Presentation</h1>
-          <button onClick={this.viewPresentation.bind(this)}>View Presentation</button>
-          <button onClick={this.presentPresentation.bind(this)}>Present Presentation</button>
-        </div>
+      <div className="presentations">
+        <nav>
+          <Link to="/">Logout</Link>
+        </nav>
+        <h1>Presentations</h1>
+        <ul>
+          <li>
+            <span>{this.state.pid}</span>
+            <button onClick={this.viewPresentation.bind(this)}>View Presentation</button>
+            <button onClick={this.presentPresentation.bind(this)}>Present Presentation</button>
+          </li>
+        </ul>
       </div>
     );
   }

@@ -1,14 +1,19 @@
 // Imports
 import React, { PropTypes } from 'react';
+import { Link } from 'react-router';
 
 /*
   PresentSlide
   <PresentSlide/>
 */
 
-const PresentSlide = ({ slide, previousTitle, nextTitle, goToNextSlide, goToPreviousSlide }) => {
+const PresentSlide = ({ params, slide, previousTitle, nextTitle, goToNextSlide, goToPreviousSlide }) => {
   return (
     <div className="slide">
+      <nav>
+        <Link to={params.uid}>&#60; Presentations</Link>
+        <Link to="/">Logout</Link>
+      </nav>
       <div className="present-slide">
         {slide.title && <h1>{slide.title}</h1>}
         {slide.subtitle && <h2>{slide.subtitle}</h2>}
@@ -21,14 +26,12 @@ const PresentSlide = ({ slide, previousTitle, nextTitle, goToNextSlide, goToPrev
           <div>
             <p>{previousTitle}</p>
             {(previousTitle) &&
-              <button onClick={goToPreviousSlide}>Previous</button>
-            }
+              <button onClick={goToPreviousSlide}>Previous</button>}
           </div>
           <div>
             <p>{nextTitle}</p>
             {(nextTitle) &&
-              <button onClick={goToNextSlide}>Next</button>
-            }
+              <button onClick={goToNextSlide}>Next</button>}
           </div>
         </div>
       </div>
@@ -37,6 +40,7 @@ const PresentSlide = ({ slide, previousTitle, nextTitle, goToNextSlide, goToPrev
 }
 
 PresentSlide.propTypes = {
+  params: PropTypes.object,
   slide: PropTypes.object,
   previousTitle: PropTypes.string,
   nextTitle: PropTypes.string,
