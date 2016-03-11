@@ -1,11 +1,9 @@
 // Imports
-import React, { Component } from 'react';
+import React, { Component, cloneElement } from 'react';
 
 // Components
-import Slide from '../Slide';
-
-// Temp Data
-// import temp
+import ViewSlide from '../ViewSlide';
+import PresentSlide from '../PresentSlide';
 
 /*
   Presentation
@@ -24,26 +22,51 @@ class Presentation extends Component {
           order: 2,
           title: 'Scotch',
           subtitle: 'Scotchy scotch scotch, I love scotch',
-          img: 'http://www.gentlemansgazette.com/wp-content/uploads/2014/02/Drinking-Scotch-for-the-first-time....jpg'
+          image: 'http://www.gentlemansgazette.com/wp-content/uploads/2014/02/Drinking-Scotch-for-the-first-time....jpg',
+          notes: ['omg', 'best day ever']
         },
         {
           id: 2,
           order: 1,
           title: 'Second Slide',
           subtitle: 'Different Order',
-          img: 'http://esq.h-cdn.co/assets/15/26/980x490/landscape-1435238543-schwarzenegger-cigar.jpg'
+          image: 'http://esq.h-cdn.co/assets/15/26/980x490/landscape-1435238543-schwarzenegger-cigar.jpg',
+          notes: ['whatever', 'lol']
         }
       ]
     }
   }
 
+  isPresenting() {
+    return true;
+  }
+
   render() {
+    const present = (
+      <PresentSlide
+        title={this.state.slides[this.state.active].title}
+        subtitle={this.state.slides[this.state.active].subtitle}
+        image={this.state.slides[this.state.active].image}
+        notes={this.state.slides[this.state.active].notes}
+        />
+    );
+    const view = (
+      <ViewSlide
+        title={this.state.slides[this.state.active].title}
+        subtitle={this.state.slides[this.state.active].subtitle}
+        image={this.state.slides[this.state.active].image}
+        />
+    );
+
     return (
       <div className="presentation">
-        <Slide title={this.state.slides[this.state.active].title} subtitle={this.state.slides[this.state.active].subtitle} image={this.state.slides[this.state.active].img} />
+        {this.isPresenting() && present}
+        {!this.isPresenting() && view}
       </div>
     );
   }
 }
 
 export default Presentation;
+
+// cloneElement(this.props.children, { myProp: 'val', mySecondProp: 'val2' , ...this.props })

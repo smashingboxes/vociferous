@@ -85,3 +85,9 @@ input {
   background-color: rgba(0, 0, 0, 0.6);
   top: 70vh;
 }
+
+.present-image {
+  width: 50%;
+  display: block;
+  margin: 0 auto;
+}

@@ -1,7 +1,7 @@
 // Imports
 import React, { Component } from 'react';
 import { render } from 'react-dom';
-import { Router, Route, IndexRedirect, hashHistory as history } from 'react-router';
+import { Router, Route, IndexRoute, hashHistory as history } from 'react-router';
 
 // CSS
 import './index.css';
