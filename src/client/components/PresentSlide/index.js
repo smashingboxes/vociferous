@@ -6,30 +6,42 @@ import React, { PropTypes } from 'react';
   <PresentSlide/>
 */
 
-const PresentSlide = ({ title, subtitle, image, notes }) => {
-  console.log(notes);
+const PresentSlide = ({ slide, previousTitle, nextTitle, goToNextSlide, goToPreviousSlide }) => {
   return (
     <div className="slide">
       <div className="present-slide">
-        {title && <h1>{title}</h1>}
-        {subtitle && <h2>{subtitle}</h2>}
-        {image && <img src={image} className="present-image" />}
-        {notes &&
+        {slide.title && <h1>{slide.title}</h1>}
+        {slide.subtitle && <h2>{slide.subtitle}</h2>}
+        {slide.image && <img src={slide.image} className="present-image" />}
+        {slide.notes &&
           <ul>
-            {notes.map((note, index) => <li key={index}>{note}</li>)}
+            {slide.notes.map((note, index) => <li key={index}>{note}</li>)}
           </ul>}
-        <button>Previous</button>
-        <button>Next</button>
+        <div className="present-controls">
+          <div>
+            <p>{previousTitle}</p>
+            {(previousTitle) &&
+              <button onClick={goToPreviousSlide}>Previous</button>
+            }
+          </div>
+          <div>
+            <p>{nextTitle}</p>
+            {(nextTitle) &&
+              <button onClick={goToNextSlide}>Next</button>
+            }
+          </div>
+        </div>
       </div>
     </div>
   )
 }
 
 PresentSlide.propTypes = {
-  title: PropTypes.string,
-  subtitle: PropTypes.string,
-  image: PropTypes.string,
-  notes: PropTypes.array
+  slide: PropTypes.object,
+  previousTitle: PropTypes.string,
+  nextTitle: PropTypes.string,
+  goToNextSlide: PropTypes.func,
+  goToPreviousSlide: PropTypes.func
 };
 
 export default PresentSlide;

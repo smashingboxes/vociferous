@@ -6,26 +6,25 @@ import React, { PropTypes } from 'react';
   <ViewSlide/>
 */
 
-const ViewSlide = ({ title, subtitle, image }) => {
+const ViewSlide = ({ slide }) => {
   const slideStyle = {
-    backgroundImage: `url(${image})`,
-    backgroundSize: 'cover'
+    backgroundImage: `url(${slide.image})`,
+    backgroundSize: 'cover',
+    backgroundPosition: 'center' 
   };
 
   return (
     <div className="slide" style={slideStyle}>
       <div className="message">
-        {title && <h1>{title}</h1>}
-        {subtitle && <h2>{subtitle}</h2>}
+        {slide.title && <h1>{slide.title}</h1>}
+        {slide.subtitle && <h2>{slide.subtitle}</h2>}
       </div>
     </div>
   )
 }
 
 ViewSlide.propTypes = {
-  title: PropTypes.string,
-  subtitle: PropTypes.string,
-  image: PropTypes.string
+  slide: PropTypes.object
 };
 
 export default ViewSlide;

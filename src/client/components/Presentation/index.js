@@ -37,15 +37,28 @@ class Presentation extends Component {
     }
   }
 
+  goToNextSlide() {
+    this.setState({
+      active: this.state.active + 1
+    });
+  }
+
+  goToPreviousSlide() {
+    this.setState({
+      active: this.state.active - 1
+    });
+  }
+
   render() {
     return (
       <div className="presentation">
         {cloneElement(this.props.children, {
           ...this.props,
-          title: this.state.slides[this.state.active].title,
-          subtitle: this.state.slides[this.state.active].subtitle,
-          image: this.state.slides[this.state.active].image,
-          notes: this.state.slides[this.state.active].notes
+          slide: this.state.slides[this.state.active],
+          previousTitle: this.state.slides[this.state.active - 1] ? this.state.slides[this.state.active - 1].title : '',
+          nextTitle: this.state.slides[this.state.active + 1] ? this.state.slides[this.state.active + 1].title : '',
+          goToNextSlide: this.goToNextSlide.bind(this),
+          goToPreviousSlide: this.goToPreviousSlide.bind(this)
         })}
       </div>
     );
