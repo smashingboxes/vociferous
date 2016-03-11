@@ -103,10 +103,27 @@ nav > a:hover {
   top: 70vh;
 }
 
-.present-image {
+.slide-preview {
   width: 50%;
   display: block;
   margin: 0 auto;
+  min-height: 300px;
+  position: relative;
+}
+
+.preview-message {
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 100%;
+  position: relative;
+  top: 200px;
+}
+
+.preview-title {
+  font-size: 16px;
+}
+
+.preview-subtitle {
+  font-size: 14px;
 }
 
 .present-controls {

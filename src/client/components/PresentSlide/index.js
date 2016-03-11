@@ -8,6 +8,12 @@ import { Link } from 'react-router';
 */
 
 const PresentSlide = ({ params, slide, previousTitle, nextTitle, goToNextSlide, goToPreviousSlide }) => {
+  const slideStyle = {
+    backgroundImage: `url(${slide.image})`,
+    backgroundSize: 'cover',
+    backgroundPosition: 'center'
+  };
+
   return (
     <div className="slide">
       <nav>
@@ -15,9 +21,12 @@ const PresentSlide = ({ params, slide, previousTitle, nextTitle, goToNextSlide, 
         <Link to="/">Logout</Link>
       </nav>
       <div className="present-slide">
-        {slide.title && <h1>{slide.title}</h1>}
-        {slide.subtitle && <h2>{slide.subtitle}</h2>}
-        {slide.image && <img src={slide.image} className="present-image" />}
+        <div className="slide-preview" style={slideStyle}>
+          <div className="preview-message">
+            {slide.title && <h1 className="preview-title">{slide.title}</h1>}
+            {slide.subtitle && <h2 className="preview-subtitle">{slide.subtitle}</h2>}
+          </div>
+        </div>
         {slide.notes &&
           <ul>
             {slide.notes.map((note, index) => <li key={index}>{note}</li>)}

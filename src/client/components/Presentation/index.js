@@ -1,6 +1,37 @@
 // Imports
 import React, { Component, PropTypes, cloneElement } from 'react';
 import { Link } from 'react-router';
+// import reactMixin from 'react-mixin';
+// import deepstream from 'deepstream.io-client-js';
+// import DeepstreamMixin from 'deepstream.io-tools-react';
+
+// const users = ds.record.getList( 'users' );
+// const user = users.getRecord( 'churchill' );
+// const presentations = users.getList( 'presentations' );
+
+// OR
+// let presentations;
+// ds.login({ user: 'churchill', pass: 'securepassword' }, function( success ){
+  // if( success ) {
+  //   //Allowed
+  //   presentations = ds.record.getList( 'presentations' );
+  // }
+// });
+
+// ER maybe not ...
+
+// const presentation = presentations.getRecord( 'scotch-cigars-victory' );
+// var onPresentationChange = function( data ) {
+//   // update state with
+//   this.setState(data);
+// };
+// presentation.subscribe( onPresentationChange );
+// presentation.unsubscribe( onPresentationChange );
+// // Stop the server from sending updates altogether
+// pupils.discard();
+// goToNextSlide() {
+//   presentation.set('active', this.state.active + 1);
+// }
 
 // Components
 import ViewSlide from '../ViewSlide';
@@ -38,6 +69,10 @@ class Presentation extends Component {
     }
   }
 
+  // componentDidMount() {
+  //
+  // }
+
   goToNextSlide() {
     this.setState({
       active: this.state.active + 1
@@ -70,5 +105,7 @@ Presentation.propTypes = {
   params: PropTypes.object,
   children: PropTypes.node
 };
+
+// reactMixin.onClass(Presentation, DeepstreamMixin);
 
 export default Presentation;
