@@ -8,14 +8,6 @@ import { Link } from 'react-router';
 */
 
 class PresentSlide extends Component {
-  constructor(props) {
-    super(props);
-
-    this.state = {
-      presentation = null;
-    }
-  }
-
   render() {
     const { params, slide, previousTitle, nextTitle, goToNextSlide, goToPreviousSlide } = this.props;
     const slideStyle = {
