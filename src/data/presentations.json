@@ -1,0 +1,41 @@
+[
+  {
+    "id": "1",
+    "title": "Scotch, Cigars & Victory",
+    "slug": "scotch-cigars-victory",
+    "active": 0,
+    "slides": [
+      {
+        "id": "1",
+        "title": "Scotch",
+        "subtitle": "Scotchy scotch scotch, I love scotch",
+        "image": "http://www.gentlemansgazette.com/wp-content/uploads/2014/02/Drinking-Scotch-for-the-first-time....jpg",
+        "notes": [
+          "A note here",
+          "And a note there"
+        ]
+      },
+      {
+        "id": "2",
+        "title": "Cigars",
+        "subtitle": "Never let the flame go out",
+        "image": "http://esq.h-cdn.co/assets/15/26/980x490/landscape-1435238543-schwarzenegger-cigar.jpg",
+        "notes": [
+          "Another Note",
+          "And another one",
+          "What the hell, why not a really long one that lets me know exactly what I want to say, or something like that"
+        ]
+      },
+      {
+        "id": "3",
+        "title": "Victory",
+        "subtitle": "Without victory, there is no survival",
+        "image": "http://www.debutesq.com/Lounge2014/Winston%20Churchill/Winston-Churchill.jpg",
+        "notes": [
+          "More filler",
+          "And a little more filler crap"
+        ]
+      }
+    ]
+  }
+]
