@@ -7,8 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "client": "webpack-dev-server -d --hot --port 8080",
     "build-client": "webpack -d",
-    "server": "./bin/www",
-    "provider": "node src/server/providers/presentations-provider.js"
+    "start": "./bin/www",
   },
   "repository": {
     "type": "git",
