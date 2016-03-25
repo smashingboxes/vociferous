@@ -2,7 +2,7 @@
   "app_type": "node",
   "startup_file": "./bin/www",
   "environment": "development",
-  "port": 6020,
+  "port": 80,
   "daemonize": true,
   "user": "biko"
 }
