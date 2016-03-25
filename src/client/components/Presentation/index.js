@@ -6,7 +6,7 @@ import deepstream from 'deepstream.io-client-js';
 // import DeepstreamMixin from 'deepstream.io-tools-react';
 
 // const client = deepstream( 'http://localhost:6020' );
-const client = deepstream( 'http://vox.biko.computer' );
+const client = deepstream( 'http://vox.biko.computer:6022' );
 
 // Components
 import ViewSlide from '../ViewSlide';
