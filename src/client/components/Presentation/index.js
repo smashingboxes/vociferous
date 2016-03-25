@@ -5,7 +5,7 @@ import { Link } from 'react-router';
 import deepstream from 'deepstream.io-client-js';
 // import DeepstreamMixin from 'deepstream.io-tools-react';
 
-const client = deepstream( 'http://6978f173.ngrok.com' );
+const client = deepstream( 'http://localhost:6379' );
 
 // Components
 import ViewSlide from '../ViewSlide';
@@ -33,6 +33,7 @@ class Presentation extends Component {
     });
 
     client.login({ username: 'churchill', password: 'scotch' }, ( success, errorEvent, data ) => {
+      console.log('mike');
       this.state.presentation.subscribe('data', ( data ) => {
         if (data) {
           this.setState({
