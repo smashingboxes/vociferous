@@ -10,11 +10,15 @@ import { Link } from 'react-router';
 class PresentSlide extends Component {
   render() {
     const { params, slide, previousTitle, nextTitle, goToNextSlide, goToPreviousSlide } = this.props;
-    const slideStyle = {
-      backgroundImage: `url(${slide.image})`,
-      backgroundSize: 'cover',
-      backgroundPosition: 'center'
-    };
+    let slideStyle = {};
+
+    if (slide.image) {
+      slideStyle = {
+        backgroundImage: `url(${slide.image})`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center'
+      };
+    }
 
     return (
       <div className="slide">
