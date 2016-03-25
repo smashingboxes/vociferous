@@ -1,5 +1,5 @@
 var HtmlWebpackPlugin = require('html-webpack-plugin');
-var BrowserSyncPlugin = require('browser-sync-webpack-plugin');
+// var BrowserSyncPlugin = require('browser-sync-webpack-plugin');
 
 var environment = 'development';
 
@@ -10,17 +10,7 @@ var plugins = [
     inject: 'body',
     template: 'src/client/index.html',
     title: 'Vociferous'
-  }),
-  new BrowserSyncPlugin(
-    {
-      host: 'localhost',
-      port: 8383,
-      proxy: 'http://localhost:8080/'
-    },
-    {
-      reload: false
-    }
-  )
+  })
 ];
 
 module.exports = {
