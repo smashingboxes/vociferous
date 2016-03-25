@@ -15,8 +15,8 @@ function initData () {
 
 function listenForSubscriptions(success, err) {
   console.log('listening for subscriptions to VOX.*...');
-  // initData();
-  // ds.record.listen( 'VOX/users/churchill.*', onSubscription );
+  initData();
+  ds.record.listen( 'VOX/users/churchill.*', onSubscription );
 }
 
 

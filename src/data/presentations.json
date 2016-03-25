@@ -9,64 +9,78 @@
         "id": "1",
         "title": "Vociferous",
         "subtitle": "WTF?",
+        "image": "https://phocab-photos.s3.amazonaws.com/httpwwwlstyrescomwp-contentuploads201401animals-vociferous-chimpanzee-wallpaper-full-hd-wallpapers-animal-picture-chimpanzee-hd-wallpaperjpg.jpg",
         "notes": [
           "Background",
           "Definition: (especially of a person or speech) vehement or clamorous."
-        ]
+        ],
+        "template": 2
       },
       {
         "id": "2",
         "title": "Background",
         "subtitle": "Moogfest, React & Chasing the new Hotness",
+        "image": "http://www.6am-group.com/wp-content/uploads/2015/12/Screen-Shot-2015-12-08-at-11.50.37-AM.png",
         "notes": [
           "For all the struggles, using new tech for Moogfest was fun",
           "I'm new to React, so I'm trying to use it as much as possible",
           "What other cool things are out there? What is the new hotness?"
-        ]
+        ],
+        "template": 1
       },
       {
         "id": "3",
         "title": "The Plan",
+        "image": "http://stevencribbs.com/wp-content/uploads/2011/02/bullhorn_000013059771XSmall.jpg",
         "notes": [
           "I liked working with Biko on this new stuff",
           "So I'll just book his labs time",
           "And bombard him with a bunch of cool JS frameworks until he gives in"
-        ]
+        ],
+        "template": 2
       },
       {
         "id": "4",
         "title": "Feedback",
-        "subtitle": "Things that are NOT the new hotness"
+        "subtitle": "Things that are NOT the new hotness",
+        "image": "https://i.ytimg.com/vi/F-xjXBJtErI/maxresdefault.jpg",
+        "template": 2
       },
       {
         "id": "5",
         "title": "kraken.js",
         "subtitle": "Give your node.js express apps some extra arms",
+        "image": "http://6336-presscdn-26-82.pagely.netdna-cdn.com/wp-content/uploads/2013/11/kraken.png",
         "notes": [
           "nope"
-        ]
+        ],
+        "template": 1
       },
       {
         "id": "6",
         "title": "levelgraph",
         "subtitle": "Graph database JS style for Node.js and the Browser",
+        "image": "http://zfacts.com/metaPage/lib/zFacts-CO2-predicted-measured.gif",
         "notes": [
           "nope"
-        ]
+        ],
+        "template": 2
       },
       {
         "id": "7",
         "title": "GraphQL",
         "notes": [
           "nope"
-        ]
+        ],
+        "template": 2
       },
       {
         "id": "8",
         "title": "Angular 2?!",
         "notes": [
           "meh"
-        ]
+        ],
+        "image": "http://i1-news.softpedia-static.com/images/news2/angular-2-roadmap-update-react-native-and-nativescript-integration-485271-2.jpg"
       },
       {
         "id": "9",
@@ -74,7 +88,9 @@
         "notes": [
           "lol",
           "jkjk"
-        ]
+        ],
+        "image": "https://pixabay.com/static/uploads/photo/2014/08/08/22/02/garbage-413757_960_720.jpg",
+        "template": 2
       },
       {
         "id": "10",
@@ -83,12 +99,15 @@
         "notes": [
           "Biko finally gave in to the idea",
           "Sent me back: What about this?"
-        ]
+        ],
+        "image": "http://factmag-images.s3.amazonaws.com/wp-content/uploads/2015/07/terry-richardson-miley-cyrus-02-635x372-616x372-616x372.jpg",
+        "template": 1
       },
       {
         "id": "11",
         "title": "deepstream.io",
         "subtitle": "A Scalable Server for Realtime Web Apps",
+        "image": "https://s3.amazonaws.com/poly-screenshots.angel.co/enhanced_screenshots/172341-original.png",
         "notes": [
           "yep",
           "this looks cool",
@@ -99,53 +118,69 @@
         "id": "12",
         "title": "You're the inspiration",
         "subtitle": "Professor Pitzer",
+        "image": "https://i.ytimg.com/vi/j5kPrlKiSx8/maxresdefault.jpg",
         "notes": [
           "My favorite professor in college",
           "Podium",
           "Important points of his lectures",
           "Flip out the speakers and hit play on his iPod"
-        ]
+        ],
+        "template": 1
       },
       {
         "id": "13",
-        "title": "Fun, right?"
+        "title": "Fun, right?",
+        "template": 2
       },
       {
         "id": "13",
-        "title": "I know"
+        "title": "I know",
+        "template": 2
       },
       {
         "id": "14",
-        "title": "Let's do that"
+        "title": "Let's do that",
+        "template": 2
       },
       {
         "id": "15",
-        "title": "for the WHOLE internet"
+        "title": "for the WHOLE internet",
+        "image": "http://1.bp.blogspot.com/--e72_39dKIQ/UiES1fBHtYI/AAAAAAAAAvY/0JTIXcynBBk/s1600/internet-map.gif",
+        "template": 2
       },
       {
         "id": "16",
-        "title": "At the same time"
+        "title": "At the same time",
+        "image": "http://www.vvork.com/wp-content/uploads/2008/03/82383003.jpg",
+        "template": 2
       },
       {
         "id": "17",
-        "title": "#Boom"
+        "title": "#Boom",
+        "image": "http://vignette1.wikia.nocookie.net/meme/images/1/18/Wtf_boom.jpg/revision/latest?cb=20091226124055",
+        "template": 2
       },
       {
         "id": "18",
-        "title": "#mindblown"
+        "title": "#mindblown",
+        "image": "http://images-cdn.moviepilot.com/images/c_fill,h_360,w_480/t_mp_quality/5-mind-blowing-movies-you-may-have-missed-320296/5-mind-blowing-movies-you-may-have-missed-320296.jpg",
+        "template": 2
       },
       {
         "id": "19",
-        "title": "...anyway"
+        "title": "...anyway",
+        "template": 2
       },
       {
         "id": "20",
-        "title": "The Name"
+        "title": "The Name",
+        "template": 2
       },
       {
         "id": "21",
         "title": "Vociferous",
         "subtitle": "(especially of a person or speech) vehement or clamorous",
+        "image": "https://phocab-photos.s3.amazonaws.com/httpwwwlstyrescomwp-contentuploads201401animals-vociferous-chimpanzee-wallpaper-full-hd-wallpapers-animal-picture-chimpanzee-hd-wallpaperjpg.jpg",
         "notes": [
           "Cool, er",
           "yeah, it fell flat",
@@ -154,32 +189,39 @@
           "Forget trying to spell it out or type it",
           "Sounds like it's out of Harry Potter",
           "We need some new ideas"
-        ]
+        ],
+        "template": 1
       },
       {
         "id": "22",
-        "title": "Vox?"
+        "title": "Vox?",
+        "template": 2
       },
       {
         "id": "23",
         "title": "Veery cool slides?",
+        "image": "http://www.roysephotos.com/zcVeery4.jpg",
         "notes": [
           "That project is coming along nicely",
           "Just in case you're asking"
-        ]
+        ],
+        "template": 1
       },
       {
         "id": "24",
-        "title": "Vresentations?"
+        "title": "Vresentations?",
+        "template": 2
       },
       {
         "id": "25",
-        "title": "Why does everythign start with V?"
+        "title": "Why does everythign start with V?",
+        "template": 2
       },
       {
         "id": "26",
         "title": "Proof of concept",
-        "subtitle": "http://vox.biko.computer"
+        "subtitle": "http://192.168.1.177:8383",
+        "template": 2
       },
       {
         "id": "27",
@@ -193,7 +235,8 @@
         "image": "http://www.gentlemansgazette.com/wp-content/uploads/2014/02/Drinking-Scotch-for-the-first-time....jpg",
         "notes": [
           "Mmmmmmmm"
-        ]
+        ],
+        "template": 2
       },
       {
         "id": "29",
@@ -210,11 +253,13 @@
       {
         "id": "31",
         "title": "Next steps",
-        "subtitle": "Web audio, Editing, Users"
+        "subtitle": "Web audio, Editing, Users",
+        "template": 1
       },
       {
         "id": "32",
-        "title": "Thanks!"
+        "title": "Thanks!",
+        "template": 2
       }
     ]
   }

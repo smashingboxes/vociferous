@@ -103,6 +103,22 @@ nav > a:hover {
   top: 70vh;
 }
 
+.slide--1 > .message {
+  top: 45vh;
+}
+
+.slide--1 > .message > h1 {
+  font-size: 50px;
+}
+
+.slide--2 > .message {
+  top: 40vh;
+}
+
+.slide--2 > .message > h1 {
+  font-size: 90px;
+}
+
 .slide-preview {
   width: 50%;
   display: block;

@@ -18,7 +18,7 @@ const ViewSlide = ({ slide }) => {
   }
 
   return (
-    <div className="slide" style={slideStyle}>
+    <div className={`slide slide--${slide.template || 2}`} style={slideStyle}>
       <div className="message">
         {slide.title && <h1>{slide.title}</h1>}
         {slide.subtitle && <h2>{slide.subtitle}</h2>}
