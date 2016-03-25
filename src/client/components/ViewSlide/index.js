@@ -7,11 +7,15 @@ import React, { PropTypes } from 'react';
 */
 
 const ViewSlide = ({ slide }) => {
-  const slideStyle = {
-    backgroundImage: `url(${slide.image})`,
-    backgroundSize: 'cover',
-    backgroundPosition: 'center'
-  };
+  let slideStyle = {};
+
+  if (slide.image) {
+    slideStyle = {
+      backgroundImage: `url(${slide.image})`,
+      backgroundSize: 'cover',
+      backgroundPosition: 'center'
+    };
+  }
 
   return (
     <div className="slide" style={slideStyle}>
