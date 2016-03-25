@@ -11,12 +11,11 @@ function login () {
 
 function initData () {
   var p1 = ds.record.getRecord('VOX/users/churchill/scotch-cigars-victory').set('data', dataPayload[0]);
-
 }
 
 function listenForSubscriptions(success, err) {
-  console.log('listening for subscriptions to VOX.*...')
-  // initData()
+  console.log('listening for subscriptions to VOX.*...');
+  // initData();
   // ds.record.listen( 'VOX/users/churchill.*', onSubscription );
 }
 
