@@ -1,0 +1,8 @@
+{
+  "app_type": "node",
+  "startup_file": "index.js",
+  "environment": "development",
+  "port": 80,
+  "daemonize": true,
+  "user": "biko"
+}
