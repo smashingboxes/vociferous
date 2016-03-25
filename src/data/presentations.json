@@ -7,33 +7,202 @@
     "slides": [
       {
         "id": "1",
-        "title": "Scotch",
-        "subtitle": "Scotchy scotch scotch, I love scotch",
-        "image": "http://www.gentlemansgazette.com/wp-content/uploads/2014/02/Drinking-Scotch-for-the-first-time....jpg",
+        "title": "Vociferous",
+        "subtitle": "WTF?",
         "notes": [
-          "A note here",
-          "And a note there"
+          "Background",
+          "Definition: (especially of a person or speech) vehement or clamorous."
         ]
       },
       {
         "id": "2",
-        "title": "Cigars",
-        "subtitle": "Never let the flame go out",
-        "image": "http://esq.h-cdn.co/assets/15/26/980x490/landscape-1435238543-schwarzenegger-cigar.jpg",
+        "title": "Background",
+        "subtitle": "Moogfest, React & Chasing the new Hotness",
         "notes": [
-          "Another Note",
-          "And another one",
-          "What the hell, why not a really long one that lets me know exactly what I want to say, or something like that"
+          "For all the struggles, using new tech for Moogfest was fun",
+          "I'm new to React, so I'm trying to use it as much as possible",
+          "What other cool things are out there? What is the new hotness?"
         ]
       },
       {
         "id": "3",
+        "title": "The Plan",
+        "notes": [
+          "I liked working with Biko on this new stuff",
+          "So I'll just book his labs time",
+          "And bombard him with a bunch of cool JS frameworks until he gives in"
+        ]
+      },
+      {
+        "id": "4",
+        "title": "Feedback",
+        "subtitle": "Things that are NOT the new hotness"
+      },
+      {
+        "id": "5",
+        "title": "kraken.js",
+        "subtitle": "Give your node.js express apps some extra arms",
+        "notes": [
+          "nope"
+        ]
+      },
+      {
+        "id": "6",
+        "title": "levelgraph",
+        "subtitle": "Graph database JS style for Node.js and the Browser",
+        "notes": [
+          "nope"
+        ]
+      },
+      {
+        "id": "7",
+        "title": "GraphQL",
+        "notes": [
+          "nope"
+        ]
+      },
+      {
+        "id": "8",
+        "title": "Angular 2?!",
+        "notes": [
+          "meh"
+        ]
+      },
+      {
+        "id": "9",
+        "title": "Wordpress?",
+        "notes": [
+          "lol",
+          "jkjk"
+        ]
+      },
+      {
+        "id": "10",
+        "title": "It finally worked!",
+        "subtitle": "Biko: 'Haha you're out of control dude'",
+        "notes": [
+          "Biko finally gave in to the idea",
+          "Sent me back: What about this?"
+        ]
+      },
+      {
+        "id": "11",
+        "title": "deepstream.io",
+        "subtitle": "A Scalable Server for Realtime Web Apps",
+        "notes": [
+          "yep",
+          "this looks cool",
+          "now what?"
+        ]
+      },
+      {
+        "id": "12",
+        "title": "You're the inspiration",
+        "subtitle": "Professor Pitzer",
+        "notes": [
+          "My favorite professor in college",
+          "Podium",
+          "Important points of his lectures",
+          "Flip out the speakers and hit play on his iPod"
+        ]
+      },
+      {
+        "id": "13",
+        "title": "Fun, right?"
+      },
+      {
+        "id": "13",
+        "title": "I know"
+      },
+      {
+        "id": "14",
+        "title": "Let's do that"
+      },
+      {
+        "id": "15",
+        "title": "for the WHOLE internet"
+      },
+      {
+        "id": "16",
+        "title": "At the same time"
+      },
+      {
+        "id": "17",
+        "title": "#Boom"
+      },
+      {
+        "id": "18",
+        "title": "#mindblown"
+      },
+      {
+        "id": "19",
+        "title": "...anyway"
+      },
+      {
+        "id": "20",
+        "title": "The Name"
+      },
+      {
+        "id": "21",
+        "title": "Vociferous",
+        "subtitle": "(especially of a person or speech) vehement or clamorous",
+        "notes": [
+          "Cool, er",
+          "yeah, it fell flat",
+          "And it's hard to spell",
+          "Kind of hard to say",
+          "Forget trying to spell it out or type it",
+          "Sounds like it's out of Harry Potter",
+          "We need some new ideas"
+        ]
+      },
+      {
+        "id": "22",
+        "title": "Vox?"
+      },
+      {
+        "id": "23",
+        "title": "Veery cool slides?",
+        "notes": [
+          "That project is coming along nicely",
+          "Just in case you're asking"
+        ]
+      },
+      {
+        "id": "24",
+        "title": "Vresentations?"
+      },
+      {
+        "id": "25",
+        "title": "Why does everythign start with V?"
+      },
+      {
+        "id": "26",
+        "title": "Proof of concept",
+        "subtitle": "http://vox.biko.computer"
+      },
+      {
+        "id": "5",
+        "title": "Scotch",
+        "subtitle": "Scotchy scotch scotch, I love scotch",
+        "image": "http://www.gentlemansgazette.com/wp-content/uploads/2014/02/Drinking-Scotch-for-the-first-time....jpg",
+        "notes": [
+          "Mmmmmmmm"
+        ]
+      },
+      {
+        "id": "6",
+        "title": "Cigars",
+        "subtitle": "Never let the flame go out",
+        "image": "http://esq.h-cdn.co/assets/15/26/980x490/landscape-1435238543-schwarzenegger-cigar.jpg"
+      },
+      {
+        "id": "7",
         "title": "Victory",
         "subtitle": "Without victory, there is no survival",
         "image": "http://www.debutesq.com/Lounge2014/Winston%20Churchill/Winston-Churchill.jpg",
         "notes": [
-          "More filler",
-          "And a little more filler crap"
+          "Thanks!"
         ]
       }
     ]
