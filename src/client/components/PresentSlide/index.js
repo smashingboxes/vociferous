@@ -27,26 +27,26 @@ class PresentSlide extends Component {
           <Link to="/">Logout</Link>
         </nav>
         <div className="present-slide">
-          <div className="slide-preview" style={slideStyle}>
-            <div className="preview-message">
-              {slide.title && <h1 className="preview-title">{slide.title}</h1>}
-              {slide.subtitle && <h2 className="preview-subtitle">{slide.subtitle}</h2>}
+          <div className="present-controls">
+            <div>
+              {(previousTitle) &&
+                <button onClick={goToPreviousSlide}>Previous</button>}
+              <p>{previousTitle}</p>
+            </div>
+            <div>
+              {(nextTitle) &&
+                <button onClick={goToNextSlide}>Next</button>}
+              <p>{nextTitle}</p>
             </div>
           </div>
           {slide.notes &&
             <ul>
               {slide.notes.map((note, index) => <li key={index}>{note}</li>)}
             </ul>}
-          <div className="present-controls">
-            <div>
-              <p>{previousTitle}</p>
-              {(previousTitle) &&
-                <button onClick={goToPreviousSlide}>Previous</button>}
-            </div>
-            <div>
-              <p>{nextTitle}</p>
-              {(nextTitle) &&
-                <button onClick={goToNextSlide}>Next</button>}
+          <div className="slide-preview" style={slideStyle}>
+            <div className="preview-message">
+              {slide.title && <h1 className="preview-title">{slide.title}</h1>}
+              {slide.subtitle && <h2 className="preview-subtitle">{slide.subtitle}</h2>}
             </div>
           </div>
         </div>

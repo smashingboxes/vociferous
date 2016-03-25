@@ -37845,19 +37845,33 @@
 	          { className: 'present-slide' },
 	          _react2.default.createElement(
 	            'div',
-	            { className: 'slide-preview', style: slideStyle },
+	            { className: 'present-controls' },
 	            _react2.default.createElement(
 	              'div',
-	              { className: 'preview-message' },
-	              slide.title && _react2.default.createElement(
-	                'h1',
-	                { className: 'preview-title' },
-	                slide.title
+	              null,
+	              previousTitle && _react2.default.createElement(
+	                'button',
+	                { onClick: goToPreviousSlide },
+	                'Previous'
 	              ),
-	              slide.subtitle && _react2.default.createElement(
-	                'h2',
-	                { className: 'preview-subtitle' },
-	                slide.subtitle
+	              _react2.default.createElement(
+	                'p',
+	                null,
+	                previousTitle
+	              )
+	            ),
+	            _react2.default.createElement(
+	              'div',
+	              null,
+	              nextTitle && _react2.default.createElement(
+	                'button',
+	                { onClick: goToNextSlide },
+	                'Next'
+	              ),
+	              _react2.default.createElement(
+	                'p',
+	                null,
+	                nextTitle
 	              )
 	            )
 	          ),
@@ -37874,33 +37888,19 @@
 	          ),
 	          _react2.default.createElement(
 	            'div',
-	            { className: 'present-controls' },
+	            { className: 'slide-preview', style: slideStyle },
 	            _react2.default.createElement(
 	              'div',
-	              null,
-	              _react2.default.createElement(
-	                'p',
-	                null,
-	                previousTitle
+	              { className: 'preview-message' },
+	              slide.title && _react2.default.createElement(
+	                'h1',
+	                { className: 'preview-title' },
+	                slide.title
 	              ),
-	              previousTitle && _react2.default.createElement(
-	                'button',
-	                { onClick: goToPreviousSlide },
-	                'Previous'
-	              )
-	            ),
-	            _react2.default.createElement(
-	              'div',
-	              null,
-	              _react2.default.createElement(
-	                'p',
-	                null,
-	                nextTitle
-	              ),
-	              nextTitle && _react2.default.createElement(
-	                'button',
-	                { onClick: goToNextSlide },
-	                'Next'
+	              slide.subtitle && _react2.default.createElement(
+	                'h2',
+	                { className: 'preview-subtitle' },
+	                slide.subtitle
 	              )
 	            )
 	          )
