@@ -6,7 +6,7 @@ import deepstream from 'deepstream.io-client-js';
 // import DeepstreamMixin from 'deepstream.io-tools-react';
 
 // const client = deepstream( 'http://localhost:6020' );
-const client = deepstream( 'http://0.tcp.ngrok.io:11229' );
+const client = deepstream( 'http://9983fa74.ngrok.io' );
 
 // Components
 import ViewSlide from '../ViewSlide';
