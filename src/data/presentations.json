@@ -182,7 +182,12 @@
         "subtitle": "http://vox.biko.computer"
       },
       {
-        "id": "5",
+        "id": "27",
+        "title": "Scotch, Cigars & Victory",
+        "subtitle": "by user: Winston Churchill"
+      },
+      {
+        "id": "28",
         "title": "Scotch",
         "subtitle": "Scotchy scotch scotch, I love scotch",
         "image": "http://www.gentlemansgazette.com/wp-content/uploads/2014/02/Drinking-Scotch-for-the-first-time....jpg",
@@ -191,19 +196,25 @@
         ]
       },
       {
-        "id": "6",
+        "id": "29",
         "title": "Cigars",
         "subtitle": "Never let the flame go out",
         "image": "http://esq.h-cdn.co/assets/15/26/980x490/landscape-1435238543-schwarzenegger-cigar.jpg"
       },
       {
-        "id": "7",
+        "id": "30",
         "title": "Victory",
         "subtitle": "Without victory, there is no survival",
-        "image": "http://www.debutesq.com/Lounge2014/Winston%20Churchill/Winston-Churchill.jpg",
-        "notes": [
-          "Thanks!"
-        ]
+        "image": "http://www.debutesq.com/Lounge2014/Winston%20Churchill/Winston-Churchill.jpg"
+      },
+      {
+        "id": "31",
+        "title": "Next steps",
+        "subtitle": "Web audio, Editing, Users"
+      },
+      {
+        "id": "32",
+        "title": "Thanks!"
       }
     ]
   }
